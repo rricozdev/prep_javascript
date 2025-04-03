@@ -1,0 +1,26 @@
+{
+  "name": "prep_javascript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rricozdev/prep_javascript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rricozdev/prep_javascript/issues"
+  },
+  "homepage": "https://github.com/rricozdev/prep_javascript#readme",
+  "description": "",
+  "dependencies": {
+    "jest": "^29.7.0"
+  }
+}
