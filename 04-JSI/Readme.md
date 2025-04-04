@@ -241,4 +241,3 @@ Software Labs recomienda comenzar con estos conceptos fundamentales antes de ade
 ✔ Strings y concatenación  
 ✔ Módulos de Node.js (export/require)  
 
-T
