@@ -1,4 +1,4 @@
-const { sumar, esPositivo, unirNombres, areaCuadrado, esMayorEdad } = require("../00-JSI")
+const { sumar, esPositivo, unirNombres, areaCuadrado, esMayorEdad } = require("../04-JSI/Practicas/00-JSI");
 
 // sumar.test.js
 
