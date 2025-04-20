@@ -12,7 +12,6 @@ function sumar() {
 
 function esPositivo() {
     // Tu código aquí
-
 }
 
 
@@ -22,7 +21,6 @@ function esPositivo() {
 
 function unirNombres() {
     // Tu código aquí
-
 }
 
 
@@ -32,7 +30,6 @@ function unirNombres() {
 
 function areaCuadrado() {
     // Tu código aquí
-
 }
 
 
@@ -41,7 +38,6 @@ function areaCuadrado() {
 
 function esMayorEdad() {
     // Tu código aquí
-
 }
 
 

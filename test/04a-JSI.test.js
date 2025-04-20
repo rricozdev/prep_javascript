@@ -1,3 +1,5 @@
+// No modificar nada en este archivo
+
 const {
   operar,
   saludar,

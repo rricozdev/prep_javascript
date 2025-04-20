@@ -3,31 +3,35 @@
 
 function operar() {
   // Tu código aquí
-  
-
 }
 
 // Ejercicio 2: Saludar con nombre
 // Declara una función que reciba un nombre y retorne el saludo "Hola " más el nombre recibido.
 function saludar() {
   // Tu código aquí
-
 }
 
 // Ejercicio 3: Verificar mayoría de edad
 // Declara una función que reciba una edad. Si es mayor o igual a 18, retorna "Mayor de edad", si no, retorna "Menor de edad".
-function verificarEdad() {
+function verificarEdad(edad) {
     // Tu código aquí
+    if (edad >= 18) {
+      return "Mayor de edad"
+    } else {
+      return "Menor de edad"
+    }
+    // if(edad >=18) return "Mayor de edad"
+    // else return "Menor de edad"
 
-
+    // return edad >= 18 ? "Mayor de edad" : "Menor de edad";
 }
+
+console.log(verificarEdad(18));
 
 // Ejercicio 4: Calcular edad
 // Declara una función que reciba el año de nacimiento y retorne la edad actual (usa 2025 como año actual).
-function calcularEdad(fechaNacimiento) {
+function calcularEdad() {
     // Tu código aquí
-
-
 }
 
 // Ejercicio 5: Calcular doble
