@@ -72,4 +72,47 @@ console.log(validarEdad(parseInt("21")));
 let age = 12;
 let age_1 = "12";
 console.log(typeof age);
-console.log(typeof age_1)
+console.log(typeof age_1);
+
+// "21 de abril" clase flujos de control
+const hora = new Date().getHours();
+
+console.log(hora);
+
+function hours(hora) {
+    if(hora < 12) {
+        return "Buenos días ☀"
+    } else if(hora < 18){
+        return "Buenas tardes 🌥"
+    } else {
+        return "Buenas noches 🌙";
+    }        
+};
+
+console.log(hours());
+
+
+// operador ternario
+const times = new Date().getHours();
+
+function horario(times){
+    return times < 12 ? "Buenos días ☀" : times < 18 ? "Buenas tardes 🌥" : "Buenas noches 🌙";
+};
+
+console.log(horario());
+
+
+
+let nombre = null; 
+let edad_ = null;
+let year = 2025
+
+function saludar(nombre, edad_){
+    if(nombre) console.log("Hola " + nombre);
+    if(edad_ == null) console.log("En que año naciste?");
+    let evaluar = year - edad_;
+    if(evaluar < 18) console.log("No puedes votar")
+        return "Eres mayor de edad y puedes ejercer el voto"
+};
+
+console.log(saludar("Andrés", 2003));
