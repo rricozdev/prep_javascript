@@ -37,4 +37,42 @@ console.log(names[2])
 console.log(data_2.name);
 
 const numeros = [0,1,2,3,4,5,6,7,8,9,10,11,12,13, -89];
-console.log(numeros[numeros.length -2])
+console.log(numeros[numeros.length -2]);
+
+
+// Clase 29 abr 2025
+// Búsqueda en array
+
+function buscarNombre(names, target){
+    for (let i = 0; i < names.length; i++){
+        if(names[i] === target) {
+            return `Econtrado en la posición número ${i}` 
+        }
+    }
+    return "Target no encontrado."
+};
+
+console.log(buscarNombre(["Ana", "Juan", "Sofía"], "Sofi"))
+
+
+// Modificación de elementos
+
+const descuentos = (prices) => {
+    const arr = [];
+    //Aplicar 10% de descuento
+    for(let idx=0; idx < prices.length; idx++){
+        arr.push(prices[idx] *= 0.9);
+    } 
+    return arr;
+};
+
+console.log(descuentos([100, 200, 300]));
+
+function discount(precios){
+    // usando map()
+    return precios.map(precio => precio *=  0.9); // x +=  1
+}
+
+console.log(discount([100, 200, 300]))
+
+
