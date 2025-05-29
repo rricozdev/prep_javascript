@@ -89,6 +89,12 @@ function mostrarFrutas() {
 }
 
 mostrarFrutas();
+// limón
+// manzana
+// pera
+// banano
+// patilla
+// mango
 ```
 
 Nota : `forEach()` no devuelve nada, y por eso normalmente no se usa con `return`.
@@ -274,7 +280,93 @@ usuarios.forEach(nombre => {
 });
 ```
 
+---   
+
+
+## 📌 Repaso   
+
+##  Extras útiles para complementar:
+
+### 🧠 1. Comparación rápida: `for` vs. métodos
+
+Mostrar esto en pantalla ayuda muchísimo:
+
+```js
+// Con for
+for (let i = 0; i < frutas.length; i++) {
+  console.log(frutas[i]);
+}
+
+// Con forEach
+frutas.forEach(fruta => console.log(fruta));
+```
+
+📍 **Conclusión para ellos**: hacen lo mismo, pero el segundo es más corto, claro y moderno.
+
 ---
+
+### 🧪 2. Minidesafío en clase
+
+> "Usen `map` para devolver el largo (cantidad de letras) de cada fruta."
+
+```js
+const longitudes = frutas.map(fruta => fruta.length);
+console.log(longitudes); // [7, 5, 8, 7, 7]
+```
+
+Esto los ayuda a entender que `map()` genera un **nuevo array transformado**.
+
+---
+
+### ⚠️ 3. Malos usos comunes 
+
+"Errores típicos":
+
+```js
+// ⚠️ Error: creer que forEach devuelve algo
+const resultado = frutas.forEach(fruta => fruta.toUpperCase());
+console.log(resultado); // undefined
+
+// ⚠️ Usar map solo para imprimir (innecesario)
+frutas.map(fruta => console.log(fruta)); // NO usar map para esto
+```
+
+📌 Aclaración: `map` es para **crear un nuevo array**. Si no necesitás ese nuevo array, **usá `forEach`**.
+
+---
+
+### 💬 4. Pregunta de reflexión final
+
+> “Si tengo que transformar datos, ¿qué método uso?”
+> “¿Y si solo quiero mostrarlos?”
+> “¿Y si quiero buscar solo uno?”
+
+Esto los lleva a pensar antes de elegir un método.
+
+---
+
+### 🎓 5. BONUS de nivel 2
+
+Array de **objetos**, vean que esto no solo aplica con strings o números:
+
+```js
+const productos = [
+  { nombre: "Camisa", precio: 20 },
+  { nombre: "Pantalón", precio: 35 },
+  { nombre: "Zapatos", precio: 50 }
+];
+
+// Mostrar solo nombres
+const nombres = productos.map(p => p.nombre);
+console.log(nombres); // ["Camisa", "Pantalón", "Zapatos"]
+
+// Filtrar los productos caros
+const caros = productos.filter(p => p.precio > 30);
+console.log(caros);
+```
+
+---
+
 
 ## 📚 Tarea
 

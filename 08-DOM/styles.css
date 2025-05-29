@@ -1,0 +1,27 @@
+.container {
+   display: flex; 
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+#titulo {
+    color: #CD5C5C;      
+}
+
+#boton, #cambiar-parrafos {
+    border-radius: 5px;
+    width: 10em;
+    height: 3em;
+    background-color: #DAF7A6;
+    color: #581845;
+    transition: transform 0.5s;
+    border-style: none;
+}
+
+
+#boton:hover, #cambiar-parrafos:hover {
+    cursor: pointer;
+    transform: scale(1);
+}
+
