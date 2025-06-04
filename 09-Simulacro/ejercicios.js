@@ -15,18 +15,31 @@ function sumarPares(arr) {
 }
 
 // utilizar el método reduce()
+// const sumarPares = (arr) => {
+//   const valorInicial = 0;
+//   return arr.filter((num) => num % 2 === 0 ).reduce((acumulador, valorActual) => acumulador + valorActual, valorInicial);
+// };
 // console.log(sumarPares([1, 2, 3, 4, 5, 6]))
 
 // ## ✅ **Ejercicio 2: Capitalizar palabras**
-
 // ### 📌 Enunciado:
 
 // Crea una función que reciba una cadena de texto y retorne la misma cadena pero con la primera letra de cada palabra en mayúscula.
 
 function capitalizarPalabras(frase) {
   // lógica
-}
+  // andrés mancilla -> Andrés Mancilla
+  // split("") -> "andrés" -> ["a", "n","d","r","é","s"]
+    //                          0    1   2   3   4   5
+  // split(" ") -> "andrés" -> ["andres"]
+  //                                0
 
+  return  frase.split(" ").map(palabra => palabra.charAt(0).toUpperCase() + palabra.slice(1)).join(" ")
+}
+// const frase = "hola mundo" -> "Hola Mundo"
+// console.log(capitalizarPalabras("hola mundo"));
+
+// console.log(capitalizarPalabras("hola mundo"));
 // code review
 
 // No tocar nada debajo de esta línea
